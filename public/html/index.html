@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <title>GuestBook</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <!-- External set up of style-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/styletable.css">
+
+    <!-- Internal set up of style-->
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container header">
+        </br>
+        <h1>Raegan's Guestbook</h1>
+        <h2>Welcome to my Guestbook - Please leave your comments</h2>
+        </br>
+    </div>
+
+    <div class="container main">
+        <br />
+        <h3 class="title">New Account</h3>
+        <form action="/auth" method="POST">
+            <div>
+                <div class="row">
+                    <div class=" form-group col">
+                        <label for="fname" class="form-check-label">First Name:</label>
+                        <input type="text" class="form-control" id="fname" placeholder="First Name" name="fname">
+                    </div>
+
+                    <div class=" form-group col ">
+                        <label for="lname" class="form-check-label">Last Name:</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="email" class="form-check-label">Email Address:</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter Email Address"
+                            name="email">
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="pwd" class="form-check-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="pwd">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="comment" class="form-check-label">Comment:</label>
+                    <input type="text" class="form-control" id="comment" placeholder="Input Comments" name="comment">
+                </div>
+
+                <div class="text-right">
+                    <input type="submit" class="btn" id="query" value="Leave Comment" />
+                    <!--<input type="button" class="btn" value ="Create Account" onclick="window.location.href = './Welcome Page.html'" />-->
+                </div>
+                <div id="error"></div>
+            </div>
+
+            <br>
+            <div>
+                <div class="table-responsive">
+                    <table id="comments" class="table center">
+                        <thead class="thead-dark">
+                            <tr class="text-left">
+                                <th style="width:100%" colspan="2" scope="col">
+                                    <label for="Title" class="align-middle">Raegan's Guestbook Comments</label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%- comments %>
+                            <!--
+                                    <tr>
+                                        <td><input style="text-align: left;" type="text" class="form-control" id="Meth"
+                                                placeholder=" Type Meth" name="">
+                                        </td>
+                                        <td><input style="text-align: left;" type="text" class="form-control" id="details"
+                                                placeholder=" Type Details" name="">
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

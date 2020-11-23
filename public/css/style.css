@@ -1,0 +1,198 @@
+.container {
+    /*border: solid black;*/
+    /*font-family: 'Heimat';*/
+    /*font-family: Tahoma, Geneva, sans-serif;*/
+    /*font-family: 'Calibri', 'Trebuchet MS', sans-serif;*/
+    /*font-family: 'Copperplate', sans-serif;*/
+    text-align: left;
+    /*font-family: Perpetua;*/
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: smaller;
+}
+
+.navbar {
+    text-transform: uppercase;
+}
+
+.main {
+    display: block;
+    position: relative;
+}
+
+.main::after {
+    content: "";
+    background: url(../img/evalucreator_logo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.04;
+    top: 75px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.header {
+    text-transform: uppercase;
+    font-family: 'Tenor Sans', sans-serif;
+    /*font-family: Copperplate, sans-serif;*/
+    /*font-family: "Arial Black", Gadget, sans-serif;*/
+    text-align: center;
+    font-weight: bolder;
+    color: #670061;
+    background-image: url(../img/Pillar2Bpicture.jpg);
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    /*background-position: center;*/
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 10px;
+    /*
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: white;
+    */
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ADADAD
+}
+
+/* Botton */
+
+.btn:hover,.btn-xm:hover {
+    border: 2px solid white;
+    background: black;
+    color: white
+}
+
+.btn,.btn-xm {
+    border: 2px solid black;
+    background: white;
+    color: black
+}
+
+.btnicon{
+    border: 2px solid white;
+    background: white;
+    width: 75px; 
+    height: 70px;   
+}
+
+.btnicon:hover{
+    border: 2px solid black;
+    background: white;  
+}
+
+.btnproject{
+    border: 2px solid white;
+    background-color: none;
+}
+
+.btnproject:hover{
+    border: 2px solid black;
+}
+
+/* Checkbox */
+
+/* Icons */
+
+.fa {
+    width: 20px;
+    text-align: center;
+}
+
+.fa:hover {
+    color: #ADADAD;
+}
+
+.fa-facebook {
+    background: white;
+    color: black;
+}
+
+.fa-twitter {
+    background: white;
+    color: black;
+}
+
+.fa-linkedin {
+    background: white;
+    color: black;
+}
+
+/*main section*/
+
+.title {
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    /*font-family: Copperplate, sans-serif;*/
+    /*font-family: "Arial Black", Gadget, sans-serif;*/
+    /*text-align: center;*/
+    color: #670061;
+    font-weight: bold;
+}
+
+.section {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 40%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    margin-top: +30px;
+    margin-left: -20%;
+}
+
+.tooltiptexticon {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.tool:hover .tooltiptext {
+    visibility: visible;
+    font-size: small;   
+    padding: 10px;
+}
+
+.tool:hover .tooltiptexticon {
+    visibility: visible;
+    font-size: small;   
+    padding: 10px;
+}
+
+p {
+    font-size: smaller;
+    color: grey;
+}
