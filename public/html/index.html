@@ -83,9 +83,10 @@
             </div>
 
             <br>
-            <div>
-                <div class="table-responsive">
-                    <table id="comments" class="table center">
+
+            <div class="table-responsive">
+                <table id="comments" class="table center">
+                    <div>
                         <thead class="thead-dark">
                             <tr class="text-left">
                                 <th style="width:100%" colspan="2" scope="col">
@@ -93,24 +94,26 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <%- comments %>
-                            <!--
-                                    <tr>
-                                        <td><input style="text-align: left;" type="text" class="form-control" id="Meth"
-                                                placeholder=" Type Meth" name="">
-                                        </td>
-                                        <td><input style="text-align: left;" type="text" class="form-control" id="details"
-                                                placeholder=" Type Details" name="">
-                                        </td>
-                                        <td></td>
-                                    </tr>
-                                -->
-                        </tbody>
-                    </table>
-                </div>
+                    </div>
+                    <tbody >
+                        <div>
+                            <p id="comments" name="comments"><%= comments%></p>
+                        </div>
+                        <!--<tr>
+                            <td><input style="text-align: left;" type="text" class="form-control" id="comments"
+                                    name="comments" value="">
+                            </td>
+                        <tr>
+                            <td><input style="text-align: left;" type="text" class="form-control" id="comments"
+                                    name="comments" value="">
+                            </td>
+                        </tr>-->
+                    </tbody>
+                </table>
             </div>
+
         </form>
     </div>
 </body>
+
 </html>

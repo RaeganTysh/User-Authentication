@@ -11,3 +11,5 @@ module.exports = {
         enableArithAbort: true
     }
 };
+
+console.log('Connected to DB!');
