@@ -77,13 +77,18 @@
 
                 <div class="text-right">
                     <input type="submit" class="btn" id="query" value="Leave Comment" />
-                    <!--<input type="button" class="btn" value ="Create Account" onclick="window.location.href = './Welcome Page.html'" />-->
+                    
                 </div>
                 <div id="error"></div>
             </div>
+            <p <%=user%></p>
+        </form>
+        
 
+        <form action="/viewComment" method="GET">
+            <div> <button type="submit" class="btn">View Comments</button></div>
+            
             <br>
-
             <div class="table-responsive">
                 <table id="comments" class="table center">
                     <div>
@@ -95,10 +100,8 @@
                             </tr>
                         </thead>
                     </div>
-                    <tbody >
-                        <div>
-                            <p id="comments" name="comments"><%= comments%></p>
-                        </div>
+                    <tbody>                        
+                            <p <%=comments%></p>
                         <!--<tr>
                             <td><input style="text-align: left;" type="text" class="form-control" id="comments"
                                     name="comments" value="">
@@ -111,8 +114,9 @@
                     </tbody>
                 </table>
             </div>
-
         </form>
+
+
     </div>
 </body>
 
